@@ -1,0 +1,29 @@
+/* From https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss */
+:root {
+  font-size: 16px;
+}
+
+/* 
+ * From https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss
+ * Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`. 
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+ * From https://github.com/necolas/normalize.css
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+}
