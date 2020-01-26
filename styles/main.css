@@ -1,29 +1,77 @@
-/* From https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss */
+@import "reset.css";
+
 :root {
-  font-size: 16px;
+  --primary: #07c6a3;
+  --bodyText: #000;
 }
 
-/* 
- * From https://github.com/twbs/bootstrap/blob/master/scss/_reboot.scss
- * Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`. 
- */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/**
- * From https://github.com/necolas/normalize.css
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+html,
+body {
+  height: 100%;
 }
 
 body {
   margin: 0;
+  padding: 30px;
+  display: grid;
+  grid-template-areas:
+    ". header header header header ."
+    ". feature feature feature feature ."
+    ". sidebar main main main ."
+    ". footer footer footer footer .";
+  grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
+  grid-template-rows: 150px auto 1fr 50px;
+  font-family: "Noto Serif", serif;
+}
+
+.icons-svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.brand__alt {
+  color: var(--bodyText);
+}
+
+.feature {
+  grid-area: feature;
+  justify-self: center;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.search {
+  margin-left: auto;
 }
