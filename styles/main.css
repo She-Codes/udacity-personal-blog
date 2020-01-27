@@ -19,25 +19,9 @@ body {
     ". feature feature feature feature ."
     ". sidebar main main main ."
     ". footer footer footer footer .";
-  grid-template-columns: 20px 1fr 1fr 1fr 1fr 20px;
+  grid-template-columns: 20px auto 1fr 1fr 1fr 20px;
   grid-template-rows: 150px auto 1fr 50px;
   font-family: "Noto Serif", serif;
-}
-
-.icons-svg {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
 }
 
 header {
@@ -49,15 +33,53 @@ header {
 .brand {
   color: var(--primary);
   font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .brand__alt {
   color: var(--bodyText);
 }
 
+.brand__end-tag {
+  position: relative;
+  padding-left: 0.4em;
+}
+
+.brand__end-tag::before {
+  content: "";
+  height: 1em;
+  width: 2px;
+  background: var(--bodyText);
+  position: absolute;
+  left: -1px;
+  bottom: 0.2em;
+  transform: rotate(25deg);
+}
+
+.brand__end-bracket {
+  padding-right: 0.1em;
+}
+
+.brand__start-bracket {
+  padding-left: 0.1em;
+}
+
+.search {
+  font-size: 1.3rem;
+}
+
 .feature {
   grid-area: feature;
   justify-self: center;
+  font-size: 4rem;
+  padding: 0 3rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.feature em {
+  font-weight: bold;
+  color: var(--primary);
 }
 
 aside {
@@ -74,4 +96,8 @@ footer {
 
 .search {
   margin-left: auto;
+}
+
+.post-snippets {
+  display: grid;
 }

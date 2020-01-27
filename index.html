@@ -12,56 +12,27 @@
     <title>Nikia Codes</title>
   </head>
   <body>
-    <svg
-      class="icons-svg"
-      aria-hidden="true"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-    >
-      <defs>
-        <symbol id="icon-search" viewBox="0 0 32 32">
-          <title>search</title>
-          <path
-            d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
-          ></path>
-        </symbol>
-        <symbol id="icon-checkbox-checked" viewBox="0 0 32 32">
-          <title>checkbox-checked</title>
-          <path
-            d="M28 0h-24c-2.2 0-4 1.8-4 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-24c0-2.2-1.8-4-4-4zM14 24.828l-7.414-7.414 2.828-2.828 4.586 4.586 9.586-9.586 2.828 2.828-12.414 12.414z"
-          ></path>
-        </symbol>
-        <symbol id="icon-checkbox-unchecked" viewBox="0 0 32 32">
-          <title>checkbox-unchecked</title>
-          <path
-            d="M28 0h-24c-2.2 0-4 1.8-4 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4v-24c0-2.2-1.8-4-4-4zM28 28h-24v-24h24v24z"
-          ></path>
-        </symbol>
-      </defs>
-    </svg>
-
     <header>
       <div class="brand">
-        <span class="brand__alt">&lt;</span>Nikia<span class="brand__alt"
-          >&gt;</span
+        <span class="brand__alt"><i class="fas fa-angle-left"></i></span
+        >Nikia<span class="brand__alt brand__end-bracket"
+          ><i class="fas fa-angle-right"></i></span
         ><span class="brand__alt">Codes</span
-        ><span class="brand__alt">&lt; &frasl;</span> Nikia<span
-          class="brand__alt"
-          >&gt;</span
-        >
+        ><span class="brand__alt brand__start-bracket"
+          ><i class="fas fa-angle-left"></i>
+        </span>
+        <span class="brand__end-tag">Nikia</span
+        ><span class="brand__alt"><i class="fas fa-angle-right"></i></span>
       </div>
       <div class="search">
-        <svg class="icon icon-search">
-          <use xlink:href="#icon-search"></use>
-        </svg>
+        <i class="fas fa-search"></i>
       </div>
     </header>
-    <div class="feature">
+    <h1 class="feature">
       I'm Nikia Shaw, a Frontend Developer, and this is where I <em>blog</em>.
-    </div>
+    </h1>
     <aside>
-      <h2>Topics:</h2>
+      <h2>Topics</h2>
       <ul class="topic-list">
         <li>React</li>
         <li>Javascript</li>
@@ -71,7 +42,36 @@
       </ul>
     </aside>
     <main>
-      <section class="recent"></section>
+      <section class="topic-section recent">
+        <h2 class="section-header">Recent</h2>
+        <div class="post-snippets">
+          <a href="" class="post-snippet">
+            <h3></h3>
+            <p></p>
+          </a>
+          <a href="" class="post-snippet">
+            <h3></h3>
+            <p></p>
+          </a>
+          <a href="" class="post-snippet">
+            <h3></h3>
+            <p></p>
+          </a>
+          <a href="" class="post-snippet">
+            <h3></h3>
+            <p></p>
+          </a>
+          <a href="" class="post-snippet">
+            <h3></h3>
+            <p></p>
+          </a>
+          <a href="" class="post-snippet">
+            <h3></h3>
+            <p></p>
+          </a>
+        </div>
+        <a href="#" class="topic-section__more-link">View All</a>
+      </section>
     </main>
     <footer></footer>
   </body>
