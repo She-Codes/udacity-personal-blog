@@ -19,7 +19,7 @@ body {
     ". feature feature feature feature ."
     ". sidebar main main main ."
     ". footer footer footer footer .";
-  grid-template-columns: 20px auto 1fr 1fr 1fr 20px;
+  grid-template-columns: 20px 200px 1fr 1fr 1fr 20px;
   grid-template-rows: 150px auto 1fr 50px;
   font-family: "Noto Serif", serif;
 }
@@ -82,8 +82,14 @@ header {
   color: var(--primary);
 }
 
-aside {
+.sidebar {
   grid-area: sidebar;
+}
+
+.sidebar__sticky-wrap {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 main {
@@ -98,6 +104,50 @@ footer {
   margin-left: auto;
 }
 
+.sidebar__heading,
+.topic-section__section-header {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.topic-section__section-header {
+  font-size: 7rem;
+  text-transform: uppercase;
+  line-height: 0.75; /* why did I need this to align text to the top of the parent?*/
+  padding-bottom: 0.45em;
+}
+
 .post-snippets {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  grid-gap: 50px 100px;
+}
+
+.post-snippet {
+  display: flex;
+  border: 5px solid var(--bodyText);
+  padding: 1rem;
+  color: var(--bodyText);
+}
+
+.post-snippet__featured-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-snippet__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-snippet__title {
+  text-align: center;
+}
+
+.post-snippet__date {
+  color: var(--primary);
 }
