@@ -24,6 +24,11 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+html,
+body {
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -41,4 +46,9 @@ p {
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: 0;
+  outline: 0;
 }
