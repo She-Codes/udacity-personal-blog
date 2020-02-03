@@ -1,236 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:400,500,700,900|Noto+Serif:400,400i,700,700i&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/main.css" />
-    <title>Nikia Codes</title>
-  </head>
 
-  <body class="home-page">
-    <header class="home-header">
-      <a href="index.html" class="brand">
-        <span class="brand__alt"><i class="fas fa-angle-left"></i></span
-        >Nikia<span class="brand__alt brand__end-bracket"
-          ><i class="fas fa-angle-right"></i></span
-        ><span class="brand__alt">Codes</span
-        ><span class="brand__alt brand__start-bracket"
-          ><i class="fas fa-angle-left"></i>
-        </span>
-        <span class="brand__end-tag">Nikia</span
-        ><span class="brand__alt"><i class="fas fa-angle-right"></i></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:400,500,700,900|Noto+Serif:400,400i,700,700i&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <title>Nikia Codes</title>
+</head>
+
+<body class="home-page">
+  <header class="home-header">
+    <button class="mobile-trigger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <a href="index.html" class="brand">
+      <span class="brand__alt"><i class="fas fa-angle-left"></i></span>Nikia<span
+        class="brand__alt brand__end-bracket"><i class="fas fa-angle-right"></i></span><span
+        class="brand__alt">Codes</span><span class="brand__alt brand__start-bracket"><i class="fas fa-angle-left"></i>
+      </span>
+      <span class="brand__end-tag">Nikia</span><span class="brand__alt"><i class="fas fa-angle-right"></i></span>
+    </a>
+    <form class="search">
+      <input type="checkbox" id="search__trigger" />
+      <input type="text" class="search__input" />
+      <label for="search__trigger">
+        <i class="fas fa-search"></i>
+      </label>
+    </form>
+  </header>
+  <h1 class="feature">
+    I'm Nikia Shaw, a Frontend Developer, and this is where I <em>blog</em>.
+  </h1>
+  <aside class="sidebar">
+    <div class="sidebar__sticky-wrap">
+      <h2 class="sidebar__heading">Topics</h2>
+      <ul class="sidebar__topic-list">
+        <li class="active">
+          <input type="radio" name="topic-inputs" id="recent-topic" checked />
+          <label for="recent-topic">
+            <div class="custom-radio">
+              <div class="target">
+                <div class="bullseye"></div>
+              </div>
+              <div class="line zero"></div>
+              <div class="line one"></div>
+              <div class="line two"></div>
+              <div class="line three"></div>
+              <div class="line four"></div>
+              <div class="line five"></div>
+              <div class="line six"></div>
+              <div class="line seven"></div>
+            </div>
+            <span>Recent</span>
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="topic-inputs" id="react-topic" />
+          <label for="react-topic">
+            <div class="custom-radio">
+              <div class="target">
+                <div class="bullseye"></div>
+              </div>
+              <div class="line zero"></div>
+              <div class="line one"></div>
+              <div class="line two"></div>
+              <div class="line three"></div>
+              <div class="line four"></div>
+              <div class="line five"></div>
+              <div class="line six"></div>
+              <div class="line seven"></div>
+            </div>
+            <span>React</span>
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="topic-inputs" id="javascript-topic" />
+          <label for="javascript-topic">
+            <div class="custom-radio">
+              <div class="target">
+                <div class="bullseye"></div>
+              </div>
+              <div class="line zero"></div>
+              <div class="line one"></div>
+              <div class="line two"></div>
+              <div class="line three"></div>
+              <div class="line four"></div>
+              <div class="line five"></div>
+              <div class="line six"></div>
+              <div class="line seven"></div>
+            </div>
+            <span>Javascript</span>
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="topic-inputs" id="css-topic" />
+          <label for="css-topic">
+            <div class="custom-radio">
+              <div class="target">
+                <div class="bullseye"></div>
+              </div>
+              <div class="line zero"></div>
+              <div class="line one"></div>
+              <div class="line two"></div>
+              <div class="line three"></div>
+              <div class="line four"></div>
+              <div class="line five"></div>
+              <div class="line six"></div>
+              <div class="line seven"></div>
+            </div>
+            <span>CSS</span>
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="topic-inputs" id="health-topic" />
+          <label for="health-topic">
+            <div class="custom-radio">
+              <div class="target">
+                <div class="bullseye"></div>
+              </div>
+              <div class="line zero"></div>
+              <div class="line one"></div>
+              <div class="line two"></div>
+              <div class="line three"></div>
+              <div class="line four"></div>
+              <div class="line five"></div>
+              <div class="line six"></div>
+              <div class="line seven"></div>
+            </div>
+            <span>Health</span>
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="topic-inputs" id="css-grid-topic" />
+          <label for="css-grid-topic">
+            <div class="custom-radio">
+              <div class="target">
+                <div class="bullseye"></div>
+              </div>
+              <div class="line zero"></div>
+              <div class="line one"></div>
+              <div class="line two"></div>
+              <div class="line three"></div>
+              <div class="line four"></div>
+              <div class="line five"></div>
+              <div class="line six"></div>
+              <div class="line seven"></div>
+            </div>
+            <span>CSS Grid</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <main class="home-main">
+    <div class="post-snippets">
+      <a href="post.html" class="post-snippet learning-through-udacity">
+        <div class="post-snippet__featured-image"></div>
+        <div class="post-snippet__description">
+          <h3 class="post-snippet__title">Learning Through Udacity</h3>
+          <p class="post-snippet__date">January 28, 2020</p>
+        </div>
       </a>
-      <form class="search">
-        <input type="checkbox" id="search__trigger" />
-        <input type="text" class="search__input" />
-        <label for="search__trigger">
-          <i class="fas fa-search"></i>
-        </label>
-      </form>
-    </header>
-    <h1 class="feature">
-      I'm Nikia Shaw, a Frontend Developer, and this is where I <em>blog</em>.
-    </h1>
-    <aside class="sidebar">
-      <div class="sidebar__sticky-wrap">
-        <h2 class="sidebar__heading">Topics</h2>
-        <ul class="sidebar__topic-list">
-          <li class="active">
-            <input type="radio" name="topic-inputs" id="recent-topic" checked />
-            <label for="recent-topic">
-              <div class="custom-radio">
-                <div class="target">
-                  <div class="bullseye"></div>
-                </div>
-                <div class="line zero"></div>
-                <div class="line one"></div>
-                <div class="line two"></div>
-                <div class="line three"></div>
-                <div class="line four"></div>
-                <div class="line five"></div>
-                <div class="line six"></div>
-                <div class="line seven"></div>
-              </div>
-              <span>Recent</span>
-            </label>
-          </li>
-          <li>
-            <input type="radio" name="topic-inputs" id="react-topic" />
-            <label for="react-topic">
-              <div class="custom-radio">
-                <div class="target">
-                  <div class="bullseye"></div>
-                </div>
-                <div class="line zero"></div>
-                <div class="line one"></div>
-                <div class="line two"></div>
-                <div class="line three"></div>
-                <div class="line four"></div>
-                <div class="line five"></div>
-                <div class="line six"></div>
-                <div class="line seven"></div>
-              </div>
-              <span>React</span>
-            </label>
-          </li>
-          <li>
-            <input type="radio" name="topic-inputs" id="javascript-topic" />
-            <label for="javascript-topic">
-              <div class="custom-radio">
-                <div class="target">
-                  <div class="bullseye"></div>
-                </div>
-                <div class="line zero"></div>
-                <div class="line one"></div>
-                <div class="line two"></div>
-                <div class="line three"></div>
-                <div class="line four"></div>
-                <div class="line five"></div>
-                <div class="line six"></div>
-                <div class="line seven"></div>
-              </div>
-              <span>Javascript</span>
-            </label>
-          </li>
-          <li>
-            <input type="radio" name="topic-inputs" id="css-topic" />
-            <label for="css-topic">
-              <div class="custom-radio">
-                <div class="target">
-                  <div class="bullseye"></div>
-                </div>
-                <div class="line zero"></div>
-                <div class="line one"></div>
-                <div class="line two"></div>
-                <div class="line three"></div>
-                <div class="line four"></div>
-                <div class="line five"></div>
-                <div class="line six"></div>
-                <div class="line seven"></div>
-              </div>
-              <span>CSS</span>
-            </label>
-          </li>
-          <li>
-            <input type="radio" name="topic-inputs" id="health-topic" />
-            <label for="health-topic">
-              <div class="custom-radio">
-                <div class="target">
-                  <div class="bullseye"></div>
-                </div>
-                <div class="line zero"></div>
-                <div class="line one"></div>
-                <div class="line two"></div>
-                <div class="line three"></div>
-                <div class="line four"></div>
-                <div class="line five"></div>
-                <div class="line six"></div>
-                <div class="line seven"></div>
-              </div>
-              <span>Health</span>
-            </label>
-          </li>
-          <li>
-            <input type="radio" name="topic-inputs" id="css-grid-topic" />
-            <label for="css-grid-topic">
-              <div class="custom-radio">
-                <div class="target">
-                  <div class="bullseye"></div>
-                </div>
-                <div class="line zero"></div>
-                <div class="line one"></div>
-                <div class="line two"></div>
-                <div class="line three"></div>
-                <div class="line four"></div>
-                <div class="line five"></div>
-                <div class="line six"></div>
-                <div class="line seven"></div>
-              </div>
-              <span>CSS Grid</span>
-            </label>
-          </li>
-        </ul>
-      </div>
-    </aside>
-    <main class="home-main">
-      <div class="post-snippets">
-        <a href="post.html" class="post-snippet learning-through-udacity">
-          <div class="post-snippet__featured-image"></div>
-          <div class="post-snippet__description">
-            <h3 class="post-snippet__title">Learning Through Udacity</h3>
-            <p class="post-snippet__date">January 28, 2020</p>
-          </div>
-        </a>
-        <a
-          href="post.html"
-          class="post-snippet breaking-free-from-tutorial-hell"
-        >
-          <div class="post-snippet__featured-image"></div>
-          <div class="post-snippet__description">
-            <h3 class="post-snippet__title">
-              Breaking Free From Tutorial Hell
-            </h3>
-            <p class="post-snippet__date">December 17, 2019</p>
-          </div>
-        </a>
-        <a
-          href=""
-          class="post-snippet custom-bootstrap-buttons-with-sass icon-feature"
-        >
-          <div class="post-snippet__featured-image">
-            <i class="fab fa-bootstrap"></i>
-          </div>
-          <div class="post-snippet__description">
-            <h3 class="post-snippet__title">
-              Custom Bootstrap Buttons with SASS
-            </h3>
-            <p class="post-snippet__date">May 7, 2018</p>
-          </div>
-        </a>
-        <a href="post.html" class="post-snippet wyd">
-          <div class="post-snippet__featured-image"></div>
-          <div class="post-snippet__description">
-            <h3 class="post-snippet__title">WYD?</h3>
-            <p class="post-snippet__date">May 6, 2018</p>
-          </div>
-        </a>
-        <a href="post.html" class="post-snippet how-do-you-prototype">
-          <div class="post-snippet__featured-image"></div>
-          <div class="post-snippet__description">
-            <h3 class="post-snippet__title">How Do You Prototype?</h3>
-            <p class="post-snippet__date">January 20, 2020</p>
-          </div>
-        </a>
-        <a
-          href=""
-          class="post-snippet learning-react-through-the-docs icon-feature"
-        >
-          <div class="post-snippet__featured-image">
-            <i class="fab fa-react"></i>
-          </div>
-          <div class="post-snippet__description">
-            <h3 class="post-snippet__title">
-              Learning React Through the Docs
-            </h3>
-            <p class="post-snippet__date">December 22, 2019</p>
-          </div>
-        </a>
-      </div>
-      <div class="post-snippets__more">
-        <button type="button" class="post-snippets__more-button">
-          <i class="fas fa-angle-double-down"></i> Load More
-        </button>
-      </div>
-    </main>
-    <footer class="home-footer">
-      <a href=""><i class="fab fa-linkedin"></i></a>
-      <a href=""><i class="fab fa-codepen"></i></a>
-      <a href=""><i class="fas fa-envelope"></i></a>
-    </footer>
-  </body>
+      <a href="post.html" class="post-snippet breaking-free-from-tutorial-hell">
+        <div class="post-snippet__featured-image"></div>
+        <div class="post-snippet__description">
+          <h3 class="post-snippet__title">
+            Breaking Free From Tutorial Hell
+          </h3>
+          <p class="post-snippet__date">December 17, 2019</p>
+        </div>
+      </a>
+      <a href="" class="post-snippet custom-bootstrap-buttons-with-sass icon-feature">
+        <div class="post-snippet__featured-image">
+          <i class="fab fa-bootstrap"></i>
+        </div>
+        <div class="post-snippet__description">
+          <h3 class="post-snippet__title">
+            Custom Bootstrap Buttons with SASS
+          </h3>
+          <p class="post-snippet__date">May 7, 2018</p>
+        </div>
+      </a>
+      <a href="post.html" class="post-snippet wyd">
+        <div class="post-snippet__featured-image"></div>
+        <div class="post-snippet__description">
+          <h3 class="post-snippet__title">WYD?</h3>
+          <p class="post-snippet__date">May 6, 2018</p>
+        </div>
+      </a>
+      <a href="post.html" class="post-snippet how-do-you-prototype">
+        <div class="post-snippet__featured-image"></div>
+        <div class="post-snippet__description">
+          <h3 class="post-snippet__title">How Do You Prototype?</h3>
+          <p class="post-snippet__date">January 20, 2020</p>
+        </div>
+      </a>
+      <a href="" class="post-snippet learning-react-through-the-docs icon-feature">
+        <div class="post-snippet__featured-image">
+          <i class="fab fa-react"></i>
+        </div>
+        <div class="post-snippet__description">
+          <h3 class="post-snippet__title">
+            Learning React Through the Docs
+          </h3>
+          <p class="post-snippet__date">December 22, 2019</p>
+        </div>
+      </a>
+    </div>
+    <div class="post-snippets__more">
+      <button type="button" class="post-snippets__more-button">
+        <i class="fas fa-angle-double-down"></i> Load More
+      </button>
+    </div>
+  </main>
+  <footer class="home-footer">
+    <a href=""><i class="fab fa-linkedin"></i></a>
+    <a href=""><i class="fab fa-codepen"></i></a>
+    <a href=""><i class="fas fa-envelope"></i></a>
+  </footer>
+</body>
+
 </html>

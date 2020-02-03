@@ -1,0 +1,83 @@
+/*
+ * POST PAGE STYLES
+ */
+body.post-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-header,
+.post-main,
+.post-footer {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.post-header {
+  position: sticky;
+  top: 0;
+}
+
+.post-main {
+  flex: auto;
+  align-self: center;
+  width: 800px;
+  padding-top: 40px;
+}
+
+.post-main_featured-image {
+  margin-bottom: 1rem;
+}
+
+.post-main_featured-image__image {
+  width: 178px;
+  height: 200px;
+  background: center / cover no-repeat
+    url("../assets/images/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg");
+  border: 9px solid var(--bodyTextLight);
+}
+
+.post-title {
+  font-size: 2.2rem;
+  line-height: 1.35;
+  padding-bottom: 0.2em;
+}
+
+.post-meta {
+  padding-bottom: 2rem;
+}
+
+.post-meta__date {
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.post-body {
+  font-size: 1.4rem;
+  color: var(--bodyTextLight);
+}
+
+.post-body p {
+  line-height: 1.6;
+  padding-bottom: 1.2em;
+}
+
+.post-body a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.post-body strong {
+  font-weight: 700;
+}
+
+.post-body em {
+  font-style: italic;
+}
+
+.post-body blockquote {
+  padding: 1.2em 1em 1.8em;
+  margin: 0;
+  font-style: italic;
+  font-size: 1.5rem;
+}
