@@ -81,3 +81,45 @@ body.post-page {
   font-style: italic;
   font-size: 1.5rem;
 }
+
+.author-card {
+  display: flex;
+  margin: 1rem 0 0;
+  background: #eee;
+  border-radius: 8px;
+  padding: 10px;
+  align-items: center;
+}
+
+.author-card__image {
+  display: block;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.author-card figcaption {
+  padding-left: 1em;
+  font-family: "Noto Sans HK", sans-serif;
+}
+
+.author-card__name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+.author-card__title,
+.author-card__bio {
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.author-card__social {
+  padding-top: 0.5em;
+}
+
+.author-card__social a {
+  color: var(--primary);
+  padding-right: 1rem;
+}
